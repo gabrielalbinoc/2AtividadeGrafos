@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class MatrizAdj {
     public static void main(String[] args) {
         LeitorTXT lerTXT = new LeitorTXT("C:/Users/Gabriel/IdeaProjects/Atividade1Grafos/src/main/java/pequenoG.txt");
-        ArrayList<String> linhas = LeitorTXT.read();
+        ArrayList<String> linhas = lerTXT.read();
         int[] grau = new int[Integer.parseInt(linhas.get(0))];
         int[][] matAdj = new int[Integer.parseInt(linhas.get(0))][Integer.parseInt(linhas.get(1))];
         int isolados = 0, extremidades = 0;
